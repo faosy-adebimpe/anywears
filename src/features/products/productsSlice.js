@@ -1,6 +1,6 @@
 import { buildCreateSlice, asyncThunkCreator } from '@reduxjs/toolkit';
 
-const url = 'https://fakestoreapi.in/products';
+const url = 'https://fakestoreapi.in/api/products';
 // const url = 'http://127.0.0.1:5000/products';
 
 export const createAppSlice = buildCreateSlice({
