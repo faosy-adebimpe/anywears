@@ -18,7 +18,8 @@ const productSlice = createAppSlice({
             async (id, thunkApi) => {
                 const res = await fetch(url);
                 const data = await res.json();
-                return await data;
+                const {products} = data;
+                return await products;
             },
             {
                 pending: (state) => {
